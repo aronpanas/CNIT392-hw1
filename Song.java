@@ -58,4 +58,8 @@ public class Song implements Serializable{
         this.year = year;
     }
     
+     @Override
+    public String toString() {
+        return String.format("(%d, %d)", this.title, this.length, this.genre, this.year);
+    
 }
