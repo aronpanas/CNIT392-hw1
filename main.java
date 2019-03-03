@@ -1,4 +1,4 @@
-
+package hw1;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw1;
+
 /**
  *
  * @author 강민경
