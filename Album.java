@@ -13,6 +13,10 @@ public class Album implements Serializable
        
     private String albumNumber;
     
+    public Album(String albumNumber) {
+        this.albumNumber = albumNumber;
+    }
+    
     public String getAlbumNumber() {
         return albumNumber;
     }
