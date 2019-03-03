@@ -9,7 +9,7 @@
  * @author 강민경
  */
 public class Hit extends Song{
-    private String tracknumber;
+   @Id @GeneratedValue String tracknumber;
 
     public Hit(String tracknumber, String title, String length, String genre, int year) {
         super(title, length, genre, year);
