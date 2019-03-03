@@ -23,5 +23,9 @@ public class Hit extends Song{
     public void setTracknumber(String tracknumber) {
         this.tracknumber = tracknumber;
     }
+   
+    @Override
+    public String toString() {
+        return String.format("(%d, %d)", this.tracknumber, this.title, this.length, this.genre, this.year);
     
 }
