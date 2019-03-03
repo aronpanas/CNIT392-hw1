@@ -31,6 +31,26 @@ public class main {
         Song song3 = new Song("Liquid Swords","4:32","GZA",1992);
         Song song4 = new Song("Living in the World Today","4:23","GZA",1992);
         Song song5 = new Song("Gangnam Style","4:15","k-pop",2012);
+        User user5 = new User(“01”, “Joe Shmoe”, “23 University Street”);
+        User user5 = new User(“02”, “Rick James”, “135 Alley Road”);
+        User user5 = new User(“03”, “John Doe”, “1234 Main Street”);
+        User user5 = new User(“04”, “Jane Doe”, “4334 State Street”);
+                         User(“05”, “Emma Kang”, “430 W Wood Street”);
+                         Business(“4321”);
+                         Business(“5678”);
+                         Business(“6969”);
+                         Business(“1010”);
+                         Hit(“7rings”,”Ariana Grande”, “2019”, “pop”,”3:04”, “1”);
+                         Hit(“Liquid Swords”, “GZA”, “1992”, 4:32, “1”);
+                         Hit(“Gangnam Style”, “2012”,”k-pop”,”4:15”, “5”);
+                         Single(“Thank u, Next”, “Ariana Grande”, “2019”, “pop”, “3:27”);
+                         Album(“1234567890”);
+                         Album(“0123456789”);
+                         Album(“9012345678”);
+                         Album(“8901234567”);
+                         Album(“7890123456”);
+
+        
         
         em.close();
         emf.close();
