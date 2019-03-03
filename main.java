@@ -56,7 +56,7 @@ Album album5 = new Album(“7890123456”);
 
         Query q1 = em.createQuery("SELECT artistname, URL FROM ARTIST1 WHERE artistname = “Ariana Grande");
         Query q2 = em.createQuery("SELECT COUNT(name) FROM USER");
-        Query q3 = em.createQuery("Select COUNT(title) from SONG inner join artist on song.artistname = artist.artistname where artistname = “Ariana Grande");
+        Query q3 = em.createQuery("SELECT artist.artistname, COUNT(title) FROM SONG INNER JOIN artist ON song.artistname = artist.artistname WHERE artistname = “Ariana Grande HAVING artist.artistname");
 
         em.close();
         emf.close();
