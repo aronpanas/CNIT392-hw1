@@ -50,7 +50,7 @@ public class main {
         Album album4 = new Album(“8901234567”);
         Album album5 = new Album(“7890123456”);
 
-        
+        Query q1 = em.createQuery("SELECT ARTISTNAME, URL FROM ARTIST artist1");
         
         em.close();
         emf.close();
