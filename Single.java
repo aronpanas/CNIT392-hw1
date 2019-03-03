@@ -14,4 +14,8 @@ public class Single extends Song{
         super(title, length, genre, year);
     }
     
+     @Override
+    public String toString() {
+        return String.format("(%d, %d)", this.title, this.length, this.genre, this.year);
+    
 }
