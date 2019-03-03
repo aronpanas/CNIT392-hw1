@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Song implements Serializable{
     private static final long serialVersionUID = 1L;
     
-    private String title;
+    @Id @GeneratedValue String title;
     private String length;
     private String genre;
     private int year;
