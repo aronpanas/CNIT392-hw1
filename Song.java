@@ -1,28 +1,29 @@
-package hw1;
 
 import java.io.Serializable;
 import javax.persistence.*;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 /**
- * @author Aron
+ *
+ * @author 강민경
  */
-@Entity
-public class Song implements Serializable
-{
-    @Id @GeneratedValue
-       
-    private String artistName;
-    private String title;
-    private String year;
-    private String genre;
-    private String length;
+public class Song implements Serializable{
+    private static final long serialVersionUID = 1L;
     
-    public String getArtistName() {
-        return artistName;
-    }
+    private String title;
+    private String length;
+    private String genre;
+    private int year;
 
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
+    public Song(String title, String length, String genre, int year) {
+        this.title = title;
+        this.length = length;
+        this.genre = genre;
+        this.year = year;
     }
 
     public String getTitle() {
@@ -33,12 +34,12 @@ public class Song implements Serializable
         this.title = title;
     }
 
-    public String getYear() {
-        return year;
+    public String getLength() {
+        return length;
     }
 
-    public void setYear(String year) {
-        this.year = year;
+    public void setLength(String length) {
+        this.length = length;
     }
 
     public String getGenre() {
@@ -49,19 +50,12 @@ public class Song implements Serializable
         this.genre = genre;
     }
 
-    public String getLength() {
-        return length;
+    public int getYear() {
+        return year;
     }
 
-    public void setLength(String length) {
-        this.length = length;
-    }
-
-   
-    
-    @Override
-    public String toString() {
-        return String.format("(%d, %d)", this.artistName, this.title, this.genre, this.year, this.length);
+    public void setYear(int year) {
+        this.year = year;
     }
     
 }
