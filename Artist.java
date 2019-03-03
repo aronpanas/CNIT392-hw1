@@ -15,6 +15,12 @@ public class Artist implements Serializable
     private String birthdate;
     private String URL;
     
+    public Artist(String artistName, String birthdate, String URL) {
+        this.artistName = artistName;
+        this.birthdate = birthdate;
+        this.URL = URL;
+    }
+    
     public String getArtistName() {
         return artistName;
     }
