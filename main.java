@@ -26,9 +26,9 @@ public class main {
         
         em.getTransaction().commit();
         
-Artist artist1 = new Artist(“Ariana Grande”, “06/23/1993”,”docs.google.com”);
-Artist artist2 = new Artist(“PSY”,”12/31/1977”,”purdue.edu”);
-Artist artist3 = new Artist(“GZA”, “2/9/1975”, “36chambersdojo.com”);
+Artist artist1 = new Artist("Ariana Grande", "06/23/1993","docs.google.com");
+Artist artist2 = new Artist("PSY","12/31/1977","purdue.edu");
+Artist artist3 = new Artist("GZA", "2/9/1975", "36chambersdojo.com");
 Song song1 = new Song("7rings","3:04","pop",2019);
 Song song2 = new Song("Thank u, Next","3:27","pop",2019);
 Song song3 = new Song("Liquid Swords","4:32","GZA",1992);
