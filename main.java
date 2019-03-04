@@ -57,7 +57,17 @@ Album album5 = new Album("7890123456");
         Query q1 = em.createQuery("SELECT artistname, URL FROM ARTIST1 WHERE artistname = “Ariana Grande");
         Query q2 = em.createQuery("SELECT COUNT(name) FROM USER");
         Query q3 = em.createQuery("SELECT artist.artistname, COUNT(title) FROM SONG INNER JOIN artist ON song.artistname = artist.artistname WHERE artistname = “Ariana Grande HAVING artist.artistname");
-
+        Query q4 = em.createQuery("UPDATE ARTIST SET artistname = “Ariana G” WHERE artistname = “Ariana Grande”");
+        Query q5 = em.createQuery("UPDATE USER SET address = “13820 Guild Avenue” WHERE name = “Rick James");
+        Query q6 = em.createQuery("UPDATE ARTIST SET URL = “newsite.gov” WHERE artistname = “PSY");
+        
+        System.out.println("FInd website of Ariana Grande: " + artist1.getURL());
+        System.out.println("The number of users on the site: " + );
+        System.out.println("Count the number of songs of 'Ariana Grande': " + );
+        System.out.println("Ariana Grande wants to change her name to Ariana G: " + );
+        System.out.println("Rick James wants to update their address: " + );
+        System.out.println("PSY wants to change his URL to a shortened one: " + );
+                         
         em.close();
         emf.close();
     }
