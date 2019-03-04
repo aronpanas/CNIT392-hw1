@@ -63,7 +63,7 @@ public class main {
         Query q5 = em.createQuery("UPDATE USER SET address = “13820 Guild Avenue” WHERE name = “Rick James");
         Query q6 = em.createQuery("UPDATE ARTIST SET URL = “newsite.gov” WHERE artistname = “PSY");
        
-        System.out.println("FInd website of Ariana Grande: " + artist1.getURL());
+        System.out.println("Find website of Ariana Grande: " + artist1.getURL());
         System.out.println("The number of users on the site: " + );
         System.out.println("Count the number of songs of 'Ariana Grande': " + );
         System.out.println("Ariana Grande wants to change her name to Ariana G: " + );
